@@ -19,6 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // cria o main navigation controller a ser usado em nosso aplicativo
         let navController = UINavigationController()
+        navController.navigationBar.barTintColor = .systemPink
+        navController.navigationBar.tintColor = .white
+        navController.navigationBar.backgroundColor = .systemPink
         
         // envia para o nosso coordinator para que ele possa exibir a view controller
         coordinator = MainCoordinator(navigationController: navController)

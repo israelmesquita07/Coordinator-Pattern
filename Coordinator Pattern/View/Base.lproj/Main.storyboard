@@ -15,24 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-nJ-9kW">
-                                <rect key="frame" x="157" y="220" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Comprar"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-nJ-9kW">
+                                <rect key="frame" x="136" y="214" width="107" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="Comprar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="buyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7MW-hj-8oh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL1-RG-LA3">
-                                <rect key="frame" x="139" y="357" width="97" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Criar Conta"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL1-RG-LA3">
+                                <rect key="frame" x="109" y="358" width="157" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="d80-7n-6G3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="Criar Conta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L85-wk-Z4U"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VL1-RG-LA3" secondAttribute="bottom" constant="270" id="0xi-Xh-muj"/>
+                            <constraint firstItem="VL1-RG-LA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="NQe-Ts-q83"/>
+                            <constraint firstItem="Pza-nJ-9kW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P9u-l5-hFX"/>
+                            <constraint firstItem="Pza-nJ-9kW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="QlQ-xg-aRn"/>
+                            <constraint firstItem="VL1-RG-LA3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RGW-h4-Gcu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pza-nJ-9kW" secondAttribute="trailing" constant="132" id="St0-RF-f12"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -47,7 +62,19 @@
                     <view key="view" contentMode="scaleToFill" id="MRz-Yv-dHW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comprar View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr6-3U-UQK">
+                                <rect key="frame" x="84.5" y="315.5" width="206.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vr6-3U-UQK" firstAttribute="centerY" secondItem="MRz-Yv-dHW" secondAttribute="centerY" id="J8u-Wt-gwJ"/>
+                            <constraint firstItem="Vr6-3U-UQK" firstAttribute="centerX" secondItem="MRz-Yv-dHW" secondAttribute="centerX" id="UNw-aw-U7R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QZq-yg-Us8"/>
                     </view>
                 </viewController>
@@ -62,7 +89,19 @@
                     <view key="view" contentMode="scaleToFill" id="CAD-CL-3vk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criar Conta View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kce-Ds-gET">
+                                <rect key="frame" x="65" y="315.5" width="245" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kce-Ds-gET" firstAttribute="centerX" secondItem="CAD-CL-3vk" secondAttribute="centerX" id="E6Y-5Z-lWO"/>
+                            <constraint firstItem="Kce-Ds-gET" firstAttribute="centerY" secondItem="CAD-CL-3vk" secondAttribute="centerY" id="Fcl-A2-JKc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aNS-8u-iqg"/>
                     </view>
                 </viewController>
