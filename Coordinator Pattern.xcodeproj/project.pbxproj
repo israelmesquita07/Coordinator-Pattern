@@ -14,6 +14,16 @@
 		58B7546423710DF2001CAFC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B7546323710DF2001CAFC3 /* Assets.xcassets */; };
 		58B7546723710DF2001CAFC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B7546523710DF2001CAFC3 /* LaunchScreen.storyboard */; };
 		58B7547223710DF2001CAFC3 /* Coordinator_PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7547123710DF2001CAFC3 /* Coordinator_PatternTests.swift */; };
+		58B7547D23710E3B001CAFC3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7547C23710E3B001CAFC3 /* Coordinator.swift */; };
+		58B7547E23710E3B001CAFC3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7547C23710E3B001CAFC3 /* Coordinator.swift */; };
+		58B7548023710E59001CAFC3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7547F23710E59001CAFC3 /* Storyboarded.swift */; };
+		58B7548123710E59001CAFC3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7547F23710E59001CAFC3 /* Storyboarded.swift */; };
+		58B75483237113DB001CAFC3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B75482237113DB001CAFC3 /* MainCoordinator.swift */; };
+		58B75484237113DB001CAFC3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B75482237113DB001CAFC3 /* MainCoordinator.swift */; };
+		58B7548623712C9A001CAFC3 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7548523712C9A001CAFC3 /* BuyViewController.swift */; };
+		58B7548723712C9A001CAFC3 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7548523712C9A001CAFC3 /* BuyViewController.swift */; };
+		58B7548923712CAB001CAFC3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7548823712CAB001CAFC3 /* CreateAccountViewController.swift */; };
+		58B7548A23712CAB001CAFC3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7548823712CAB001CAFC3 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +48,11 @@
 		58B7546D23710DF2001CAFC3 /* Coordinator PatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coordinator PatternTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B7547123710DF2001CAFC3 /* Coordinator_PatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator_PatternTests.swift; sourceTree = "<group>"; };
 		58B7547323710DF2001CAFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58B7547C23710E3B001CAFC3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		58B7547F23710E59001CAFC3 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		58B75482237113DB001CAFC3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		58B7548523712C9A001CAFC3 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		58B7548823712CAB001CAFC3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +96,11 @@
 			children = (
 				58B7545A23710DF1001CAFC3 /* AppDelegate.swift */,
 				58B7545C23710DF1001CAFC3 /* SceneDelegate.swift */,
-				58B7545E23710DF1001CAFC3 /* ViewController.swift */,
-				58B7546023710DF1001CAFC3 /* Main.storyboard */,
+				58B7548C2371304D001CAFC3 /* Controller */,
+				58B7548B23713038001CAFC3 /* View */,
+				58B7548D23713061001CAFC3 /* Protocols */,
+				58B7548E23713078001CAFC3 /* Coordinator */,
 				58B7546323710DF2001CAFC3 /* Assets.xcassets */,
-				58B7546523710DF2001CAFC3 /* LaunchScreen.storyboard */,
 				58B7546823710DF2001CAFC3 /* Info.plist */,
 			);
 			path = "Coordinator Pattern";
@@ -97,6 +113,42 @@
 				58B7547323710DF2001CAFC3 /* Info.plist */,
 			);
 			path = "Coordinator PatternTests";
+			sourceTree = "<group>";
+		};
+		58B7548B23713038001CAFC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58B7546023710DF1001CAFC3 /* Main.storyboard */,
+				58B7546523710DF2001CAFC3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58B7548C2371304D001CAFC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58B7545E23710DF1001CAFC3 /* ViewController.swift */,
+				58B7548523712C9A001CAFC3 /* BuyViewController.swift */,
+				58B7548823712CAB001CAFC3 /* CreateAccountViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58B7548D23713061001CAFC3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				58B7547C23710E3B001CAFC3 /* Coordinator.swift */,
+				58B7547F23710E59001CAFC3 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		58B7548E23713078001CAFC3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				58B75482237113DB001CAFC3 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B7547D23710E3B001CAFC3 /* Coordinator.swift in Sources */,
+				58B75483237113DB001CAFC3 /* MainCoordinator.swift in Sources */,
 				58B7545F23710DF1001CAFC3 /* ViewController.swift in Sources */,
+				58B7548023710E59001CAFC3 /* Storyboarded.swift in Sources */,
+				58B7548923712CAB001CAFC3 /* CreateAccountViewController.swift in Sources */,
 				58B7545B23710DF1001CAFC3 /* AppDelegate.swift in Sources */,
+				58B7548623712C9A001CAFC3 /* BuyViewController.swift in Sources */,
 				58B7545D23710DF1001CAFC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B7548A23712CAB001CAFC3 /* CreateAccountViewController.swift in Sources */,
+				58B7547E23710E3B001CAFC3 /* Coordinator.swift in Sources */,
+				58B7548723712C9A001CAFC3 /* BuyViewController.swift in Sources */,
+				58B75484237113DB001CAFC3 /* MainCoordinator.swift in Sources */,
 				58B7547223710DF2001CAFC3 /* Coordinator_PatternTests.swift in Sources */,
+				58B7548123710E59001CAFC3 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
