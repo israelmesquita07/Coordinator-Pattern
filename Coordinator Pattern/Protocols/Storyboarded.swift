@@ -18,7 +18,7 @@ extension Storyboarded where Self: UIViewController {
         // isso abre "MyApp.MyViewController"
         let fullName = NSStringFromClass(self)
 
-        // isso é dividido pelo ponto e usa tudo depois, fornecendo "MyViewController"
+        // isso é dividido pelo ponto e usa tudo depois, fornecendo "(x)ViewController"
         let className = fullName.components(separatedBy: ".")[1]
 
         // carrega o storyboard
