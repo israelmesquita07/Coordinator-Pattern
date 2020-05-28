@@ -23,6 +23,5 @@ class ViewController: UIViewController, Storyboarded {
     @IBAction func createAccount(_ sender: UIButton) {
         coordinator?.createAccount()
     }
-    
 }
 
